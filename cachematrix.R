@@ -2,13 +2,22 @@
 ## functions do
 
 
-# Two funcitions to solve problem 2 for Coursera R-programming
-# Assignment is to create a function that makescaches a matrix
-# and a function that either solves a matrix or gets answer from cache
+# Two funcitions to solve problem 2 for Coursera R-programming Assignment is to 
+# create a function that makescaches a matrix and a function that either solves a
+# the inverse of a matrix or gets the inverse from cache. My solution was a 
+# rewrite of the example: Caching the Mean of a Vector. The first function 
+# transforms a matrix to special matrix (or class for us python programmers). The
+# second function tests if matrix is in cache or needs to be solved.
 
-## Write a short comment describing this function
 
-# makeCacheMatrix creates a matrixs that caches the inverse
+
+# makeCacheMatrix creates a special matrixs that:
+
+# set the value of the matrix
+# get the value of the matrix
+# set the value of the inverse
+# get the value of the inverse
+
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -28,7 +37,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 
 ## Function calculates the inverse of a matrix If the matrix is in cache, it
 ## returns the cached version instead.
